@@ -22,6 +22,8 @@
 		FA2AD1FD1F79492800AE5511 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */; };
 		FAC99D4C1F7A4781004F351F /* ApiDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D4B1F7A4781004F351F /* ApiDataSourceProtocol.swift */; };
 		FAC99D4E1F7A4808004F351F /* CountriesApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */; };
+		FAC99D521F7A4BE8004F351F /* ListCountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D511F7A4BE8004F351F /* ListCountriesPresenter.swift */; };
+		FAC99D551F7A4D41004F351F /* ListCountiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D541F7A4D41004F351F /* ListCountiesModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 		FAC99D4B1F7A4781004F351F /* ApiDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDataSourceProtocol.swift; sourceTree = "<group>"; };
 		FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesApiDataSource.swift; sourceTree = "<group>"; };
+		FAC99D511F7A4BE8004F351F /* ListCountriesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCountriesPresenter.swift; sourceTree = "<group>"; };
+		FAC99D541F7A4D41004F351F /* ListCountiesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCountiesModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +143,7 @@
 		FA10D4EE1F78E929009214BF /* CountryApp */ = {
 			isa = PBXGroup;
 			children = (
+				FAC99D4F1F7A4BBA004F351F /* mvp */,
 				FA2AD1FE1F794CC400AE5511 /* Helpers */,
 				FA10D4EF1F78E929009214BF /* AppDelegate.swift */,
 				FA10D4F31F78E929009214BF /* Main.storyboard */,
@@ -180,6 +185,39 @@
 				FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */,
 			);
 			name = Helpers;
+			sourceTree = "<group>";
+		};
+		FAC99D4F1F7A4BBA004F351F /* mvp */ = {
+			isa = PBXGroup;
+			children = (
+				FAC99D561F7A5425004F351F /* listcountries */,
+			);
+			name = mvp;
+			sourceTree = "<group>";
+		};
+		FAC99D501F7A4BC6004F351F /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FAC99D511F7A4BE8004F351F /* ListCountriesPresenter.swift */,
+			);
+			name = presenter;
+			sourceTree = "<group>";
+		};
+		FAC99D531F7A4D2E004F351F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC99D541F7A4D41004F351F /* ListCountiesModel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		FAC99D561F7A5425004F351F /* listcountries */ = {
+			isa = PBXGroup;
+			children = (
+				FAC99D501F7A4BC6004F351F /* presenter */,
+				FAC99D531F7A4D2E004F351F /* model */,
+			);
+			name = listcountries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -383,9 +421,11 @@
 				FA10D5251F78E9E8009214BF /* CountryEntity.swift in Sources */,
 				FA10D5271F78ED89009214BF /* CountryItemUIViewController.swift in Sources */,
 				FA2AD1FD1F79492800AE5511 /* JsonHelper.swift in Sources */,
+				FAC99D551F7A4D41004F351F /* ListCountiesModel.swift in Sources */,
 				FAC99D4E1F7A4808004F351F /* CountriesApiDataSource.swift in Sources */,
 				FA10D5211F78E978009214BF /* CountriesUITableTableViewController.swift in Sources */,
 				FAC99D4C1F7A4781004F351F /* ApiDataSourceProtocol.swift in Sources */,
+				FAC99D521F7A4BE8004F351F /* ListCountriesPresenter.swift in Sources */,
 				FA10D4F81F78E929009214BF /* CountryApp.xcdatamodeld in Sources */,
 				FA10D4F01F78E929009214BF /* AppDelegate.swift in Sources */,
 			);

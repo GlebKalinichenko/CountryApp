@@ -10,26 +10,13 @@ import UIKit
 
 class CountriesUITableTableViewController: UITableViewController {
     var countries = [CountryEntity] ()
+    let presenter = ListCountriesPresenter(model: ListCountriesModel())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        //loadCountriesFromRest()
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+        presenter.attachView(view: self)
+        presenter.receiveCounries()
     }
-    
-    /*private func loadCountriesFromRest() {
-        Alamofire.request("https://restcountries.eu/rest/v2/all").responseJSON { response in
-            let json = JSON(data: response.data!)
-            self.countries = JsonHelper.parseCountriesJson(key1: "name", key2: "alpha2Code", key3: "flag", json: json)
-            self.tableView.reloadData()
-            
-            print(response.result)
-            print(response.response)
-        }
-    }*/
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -121,3 +108,19 @@ class CountriesUITableTableViewController: UITableViewController {
     */
 
 }
+
+extension CountriesUITableTableViewController : ListCountriesView {
+    func startProgressIndicator() {
+        
+    }
+    
+    func finishProgressIndicator() {
+        
+    }
+    
+    func showCountriesList(countries: [CountryEntity]) {
+        self.countries = countries
+        tableView.reloadData()
+    }
+}
+

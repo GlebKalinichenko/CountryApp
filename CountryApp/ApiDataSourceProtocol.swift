@@ -7,8 +7,9 @@
 //
 
 import Foundation
+import Alamofire
 
 public protocol ApiDataSourceProcol {
-    func receiveListCountries() -> [CountryEntity]
+    func receiveListCountries() -> DataRequest
     func receiveItemCountry(countryCode: String) -> CountryEntity
 }
