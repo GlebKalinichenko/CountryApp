@@ -17,10 +17,9 @@ public class CountriesApiDataSource : ApiDataSourceProcol {
         return Alamofire.request("https://restcountries.eu/rest/v2/all")
     }
     
-    public func receiveItemCountry(countryCode: String) -> CountryEntity {
-        var country: CountryEntity?
-        
-        Alamofire.request("https://restcountries.eu/rest/v2/alpha/" + countryCode).responseJSON { response in
+    public func receiveItemCountry(countryCode: String) -> DataRequest {
+        return Alamofire.request("https://restcountries.eu/rest/v2/alpha/" + countryCode)
+            /*.responseJSON { response in
             guard (response.data) != nil else {
                 fatalError()
             }
@@ -34,9 +33,7 @@ public class CountriesApiDataSource : ApiDataSourceProcol {
             country?.countryName = countryName
             country?.capital = countryCapital
             country?.url = countryFlag
-        }
-        
-        return country!
+        }*/
     }
     
     

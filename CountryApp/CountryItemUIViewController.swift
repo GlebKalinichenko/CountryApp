@@ -17,32 +17,16 @@ class CountryItemUIViewController: UIViewController {
     @IBOutlet weak var countryImage: UIImageView!
     @IBOutlet weak var progressIndicator: UIActivityIndicatorView!
     var country: CountryEntity?
+    var presenter: ItemCountryPresenter?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        presenter = ItemCountryPresenter(model: ItemCountryModel(), countryCode: country!.code!, view: self)
+        presenter?.receiveItemCountry()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-    private func setCountryContent() {
-        countryLabel.text = country?.countryName
-        capitalLabel.text = country?.capital
-        let url = URL(string: (country?.url!)!)
-        countryImage.kf.setImage(with: url)
-    }
-    
-    private func startProgressIndicator() {
-        progressIndicator.isHidden = false
-        progressIndicator.startAnimating()
-    }
-    
-    private func stopProgressIndicator() {
-        progressIndicator.stopAnimating()
-        progressIndicator.isHidden = true
     }
 
     /*
@@ -55,4 +39,23 @@ class CountryItemUIViewController: UIViewController {
     }
     */
 
+}
+
+extension CountryItemUIViewController : ItemCountriesView {
+    func startProgressIndicator() {
+        progressIndicator.isHidden = false
+        progressIndicator.startAnimating()
+    }
+    
+    func finishProgressIndicator() {
+        progressIndicator.stopAnimating()
+        progressIndicator.isHidden = true
+    }
+    
+    func showCountryContent(country: CountryEntity) {
+        countryLabel.text = country.countryName
+        capitalLabel.text = country.capital
+        //let url = URL(string: country.url!)
+        //countryImage.kf.setImage(with: url)
+    }
 }

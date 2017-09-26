@@ -24,6 +24,8 @@
 		FAC99D4E1F7A4808004F351F /* CountriesApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */; };
 		FAC99D521F7A4BE8004F351F /* ListCountriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D511F7A4BE8004F351F /* ListCountriesPresenter.swift */; };
 		FAC99D551F7A4D41004F351F /* ListCountiesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D541F7A4D41004F351F /* ListCountiesModel.swift */; };
+		FAC99D5B1F7A593E004F351F /* ItemCountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D5A1F7A593E004F351F /* ItemCountryModel.swift */; };
+		FAC99D5E1F7A59BA004F351F /* ItemCountryPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D5D1F7A59BA004F351F /* ItemCountryPresenter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesApiDataSource.swift; sourceTree = "<group>"; };
 		FAC99D511F7A4BE8004F351F /* ListCountriesPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCountriesPresenter.swift; sourceTree = "<group>"; };
 		FAC99D541F7A4D41004F351F /* ListCountiesModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListCountiesModel.swift; sourceTree = "<group>"; };
+		FAC99D5A1F7A593E004F351F /* ItemCountryModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCountryModel.swift; sourceTree = "<group>"; };
+		FAC99D5D1F7A59BA004F351F /* ItemCountryPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCountryPresenter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -190,6 +194,7 @@
 		FAC99D4F1F7A4BBA004F351F /* mvp */ = {
 			isa = PBXGroup;
 			children = (
+				FAC99D571F7A5918004F351F /* itemcountry */,
 				FAC99D561F7A5425004F351F /* listcountries */,
 			);
 			name = mvp;
@@ -218,6 +223,31 @@
 				FAC99D531F7A4D2E004F351F /* model */,
 			);
 			name = listcountries;
+			sourceTree = "<group>";
+		};
+		FAC99D571F7A5918004F351F /* itemcountry */ = {
+			isa = PBXGroup;
+			children = (
+				FAC99D591F7A5928004F351F /* presenter */,
+				FAC99D581F7A5924004F351F /* model */,
+			);
+			name = itemcountry;
+			sourceTree = "<group>";
+		};
+		FAC99D581F7A5924004F351F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				FAC99D5A1F7A593E004F351F /* ItemCountryModel.swift */,
+			);
+			name = model;
+			sourceTree = "<group>";
+		};
+		FAC99D591F7A5928004F351F /* presenter */ = {
+			isa = PBXGroup;
+			children = (
+				FAC99D5D1F7A59BA004F351F /* ItemCountryPresenter.swift */,
+			);
+			name = presenter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -418,10 +448,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FA10D5231F78E998009214BF /* CountryTableViewCell.swift in Sources */,
+				FAC99D5B1F7A593E004F351F /* ItemCountryModel.swift in Sources */,
 				FA10D5251F78E9E8009214BF /* CountryEntity.swift in Sources */,
 				FA10D5271F78ED89009214BF /* CountryItemUIViewController.swift in Sources */,
 				FA2AD1FD1F79492800AE5511 /* JsonHelper.swift in Sources */,
 				FAC99D551F7A4D41004F351F /* ListCountiesModel.swift in Sources */,
+				FAC99D5E1F7A59BA004F351F /* ItemCountryPresenter.swift in Sources */,
 				FAC99D4E1F7A4808004F351F /* CountriesApiDataSource.swift in Sources */,
 				FA10D5211F78E978009214BF /* CountriesUITableTableViewController.swift in Sources */,
 				FAC99D4C1F7A4781004F351F /* ApiDataSourceProtocol.swift in Sources */,

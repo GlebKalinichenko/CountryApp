@@ -11,5 +11,5 @@ import Alamofire
 
 public protocol ApiDataSourceProcol {
     func receiveListCountries() -> DataRequest
-    func receiveItemCountry(countryCode: String) -> CountryEntity
+    func receiveItemCountry(countryCode: String) -> DataRequest
 }
