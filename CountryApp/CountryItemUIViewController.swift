@@ -9,15 +9,17 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Kingfisher
 
 class CountryItemUIViewController: UIViewController {
     @IBOutlet weak var countryLabel: UILabel!
     @IBOutlet weak var capitalLabel: UILabel!
+    @IBOutlet weak var countryImage: UIImageView!
+    @IBOutlet weak var progressIndicator: UIActivityIndicatorView!
     var country: CountryEntity?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadItemCountry()
         // Do any additional setup after loading the view.
     }
 
@@ -26,28 +28,21 @@ class CountryItemUIViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    private func loadItemCountry() {
-    
-        Alamofire.request("https://restcountries.eu/rest/v2/alpha/" + country!.code!).responseJSON { response in
-            guard (response.data) != nil else {
-                fatalError()
-            }
-            
-            let json = JSON(data: response.data!)
-            let countryName = json["name"].string
-            let countryCode = json["alpha2Code"].string
-            let countryCapital = json["capital"].string
-            self.country?.code = countryCode
-            self.country?.countryName = countryName
-            self.country?.capital = countryCapital
-            
-            self.setCountryContent()
-        }
-    }
-    
     private func setCountryContent() {
         countryLabel.text = country?.countryName
         capitalLabel.text = country?.capital
+        let url = URL(string: (country?.url!)!)
+        countryImage.kf.setImage(with: url)
+    }
+    
+    private func startProgressIndicator() {
+        progressIndicator.isHidden = false
+        progressIndicator.startAnimating()
+    }
+    
+    private func stopProgressIndicator() {
+        progressIndicator.stopAnimating()
+        progressIndicator.isHidden = true
     }
 
     /*

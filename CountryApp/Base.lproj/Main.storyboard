@@ -100,17 +100,27 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="4H3-qg-mB5">
+                                <rect key="frame" x="16" y="124" width="343" height="512"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="rKZ-7s-Ocf">
+                                <rect key="frame" x="177" y="323" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="capitalLabel" destination="QfV-Yz-HL0" id="vDg-ZR-B1j"/>
+                        <outlet property="countryImage" destination="4H3-qg-mB5" id="MF0-7C-fG5"/>
                         <outlet property="countryLabel" destination="g8r-Et-nni" id="hjk-1f-0Se"/>
+                        <outlet property="progressIndicator" destination="rKZ-7s-Ocf" id="uk3-49-29g"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Bz-4k-xrh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-682" y="-111"/>
+            <point key="canvasLocation" x="-682.39999999999998" y="-111.0944527736132"/>
         </scene>
     </scenes>
 </document>

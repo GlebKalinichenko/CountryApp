@@ -12,13 +12,14 @@ import SwiftyJSON
 public class JsonHelper {
     
     
-    public static func parseCountriesJson(key1: String, key2: String, json: JSON) -> [CountryEntity] {
+    public static func parseCountriesJson(key1: String, key2: String, key3: String, json: JSON) -> [CountryEntity] {
         var countries = [CountryEntity]()
         
         for (index, subJson):(String, JSON) in json {
             var countryName = subJson.dictionary?[key1]?.string
             var countryCode = subJson.dictionary?[key2]?.string
-            countries.append(CountryEntity(code: countryCode, countryName: countryName))
+            var url = subJson.dictionary?[key3]?.string
+            countries.append(CountryEntity(code: countryCode, countryName: countryName, url: url))
         }
         
         return countries

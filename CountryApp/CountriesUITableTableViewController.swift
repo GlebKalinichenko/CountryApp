@@ -7,14 +7,12 @@
 //
 
 import UIKit
-import Alamofire
-import SwiftyJSON
 
 class CountriesUITableTableViewController: UITableViewController {
     var countries = [CountryEntity] ()
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadCountriesFromRest()
+        //loadCountriesFromRest()
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -22,16 +20,16 @@ class CountriesUITableTableViewController: UITableViewController {
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
     }
     
-    private func loadCountriesFromRest() {
+    /*private func loadCountriesFromRest() {
         Alamofire.request("https://restcountries.eu/rest/v2/all").responseJSON { response in
             let json = JSON(data: response.data!)
-            self.countries = JsonHelper.parseCountriesJson(key1: "name", key2: "alpha2Code", json: json)
+            self.countries = JsonHelper.parseCountriesJson(key1: "name", key2: "alpha2Code", key3: "flag", json: json)
             self.tableView.reloadData()
             
             print(response.result)
             print(response.response)
         }
-    }
+    }*/
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

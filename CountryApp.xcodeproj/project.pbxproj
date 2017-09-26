@@ -20,6 +20,8 @@
 		FA10D5251F78E9E8009214BF /* CountryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5241F78E9E8009214BF /* CountryEntity.swift */; };
 		FA10D5271F78ED89009214BF /* CountryItemUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5261F78ED89009214BF /* CountryItemUIViewController.swift */; };
 		FA2AD1FD1F79492800AE5511 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */; };
+		FAC99D4C1F7A4781004F351F /* ApiDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D4B1F7A4781004F351F /* ApiDataSourceProtocol.swift */; };
+		FAC99D4E1F7A4808004F351F /* CountriesApiDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +65,8 @@
 		FA1D4F761F7935420061D59D /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../Library/Developer/Xcode/DerivedData/CountryApp-bfevqiscqackbabzlpwkchmaxrvi/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
 		FA1D4F781F7935450061D59D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/CountryApp-bfevqiscqackbabzlpwkchmaxrvi/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
 		FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
+		FAC99D4B1F7A4781004F351F /* ApiDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiDataSourceProtocol.swift; sourceTree = "<group>"; };
+		FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesApiDataSource.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +176,8 @@
 			isa = PBXGroup;
 			children = (
 				FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */,
+				FAC99D4B1F7A4781004F351F /* ApiDataSourceProtocol.swift */,
+				FAC99D4D1F7A4808004F351F /* CountriesApiDataSource.swift */,
 			);
 			name = Helpers;
 			sourceTree = "<group>";
@@ -317,11 +323,15 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-CountryApp/Pods-CountryApp-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -373,7 +383,9 @@
 				FA10D5251F78E9E8009214BF /* CountryEntity.swift in Sources */,
 				FA10D5271F78ED89009214BF /* CountryItemUIViewController.swift in Sources */,
 				FA2AD1FD1F79492800AE5511 /* JsonHelper.swift in Sources */,
+				FAC99D4E1F7A4808004F351F /* CountriesApiDataSource.swift in Sources */,
 				FA10D5211F78E978009214BF /* CountriesUITableTableViewController.swift in Sources */,
+				FAC99D4C1F7A4781004F351F /* ApiDataSourceProtocol.swift in Sources */,
 				FA10D4F81F78E929009214BF /* CountryApp.xcdatamodeld in Sources */,
 				FA10D4F01F78E929009214BF /* AppDelegate.swift in Sources */,
 			);
