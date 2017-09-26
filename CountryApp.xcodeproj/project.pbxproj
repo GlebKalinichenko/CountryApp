@@ -7,14 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0E60D007EE17DF7C5CDCD05A /* Pods_CountryApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ECF947867A6AE9FAAD3203EB /* Pods_CountryApp.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		FA10D4F01F78E929009214BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D4EF1F78E929009214BF /* AppDelegate.swift */; };
-		FA10D4F21F78E929009214BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D4F11F78E929009214BF /* ViewController.swift */; };
 		FA10D4F51F78E929009214BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA10D4F31F78E929009214BF /* Main.storyboard */; };
 		FA10D4F81F78E929009214BF /* CountryApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FA10D4F61F78E929009214BF /* CountryApp.xcdatamodeld */; };
 		FA10D4FA1F78E929009214BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA10D4F91F78E929009214BF /* Assets.xcassets */; };
 		FA10D4FD1F78E929009214BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FA10D4FB1F78E929009214BF /* LaunchScreen.storyboard */; };
 		FA10D5081F78E929009214BF /* CountryAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5071F78E929009214BF /* CountryAppTests.swift */; };
 		FA10D5131F78E929009214BF /* CountryAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5121F78E929009214BF /* CountryAppUITests.swift */; };
+		FA10D5211F78E978009214BF /* CountriesUITableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5201F78E978009214BF /* CountriesUITableTableViewController.swift */; };
+		FA10D5231F78E998009214BF /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5221F78E998009214BF /* CountryTableViewCell.swift */; };
+		FA10D5251F78E9E8009214BF /* CountryEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5241F78E9E8009214BF /* CountryEntity.swift */; };
+		FA10D5271F78ED89009214BF /* CountryItemUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA10D5261F78ED89009214BF /* CountryItemUIViewController.swift */; };
+		FA2AD1FD1F79492800AE5511 /* JsonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +40,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11F5F63D545B09642DDABB33 /* Pods-CountryApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CountryApp/Pods-CountryApp.debug.xcconfig"; sourceTree = "<group>"; };
+		BE4E8CC6C1A54E301E03A05F /* Pods-CountryApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CountryApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CountryApp/Pods-CountryApp.release.xcconfig"; sourceTree = "<group>"; };
+		ECF947867A6AE9FAAD3203EB /* Pods_CountryApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CountryApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA10D4EC1F78E929009214BF /* CountryApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CountryApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA10D4EF1F78E929009214BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		FA10D4F11F78E929009214BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FA10D4F41F78E929009214BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FA10D4F71F78E929009214BF /* CountryApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CountryApp.xcdatamodel; sourceTree = "<group>"; };
 		FA10D4F91F78E929009214BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +56,13 @@
 		FA10D50E1F78E929009214BF /* CountryAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CountryAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA10D5121F78E929009214BF /* CountryAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAppUITests.swift; sourceTree = "<group>"; };
 		FA10D5141F78E929009214BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA10D5201F78E978009214BF /* CountriesUITableTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountriesUITableTableViewController.swift; sourceTree = "<group>"; };
+		FA10D5221F78E998009214BF /* CountryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		FA10D5241F78E9E8009214BF /* CountryEntity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryEntity.swift; sourceTree = "<group>"; };
+		FA10D5261F78ED89009214BF /* CountryItemUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CountryItemUIViewController.swift; sourceTree = "<group>"; };
+		FA1D4F761F7935420061D59D /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../../Library/Developer/Xcode/DerivedData/CountryApp-bfevqiscqackbabzlpwkchmaxrvi/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		FA1D4F781F7935450061D59D /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "../../../Library/Developer/Xcode/DerivedData/CountryApp-bfevqiscqackbabzlpwkchmaxrvi/Build/Products/Debug-iphonesimulator/Alamofire/Alamofire.framework"; sourceTree = "<group>"; };
+		FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JsonHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0E60D007EE17DF7C5CDCD05A /* Pods_CountryApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +91,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37CBC1DC663197ACE8AD0FBA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				11F5F63D545B09642DDABB33 /* Pods-CountryApp.debug.xcconfig */,
+				BE4E8CC6C1A54E301E03A05F /* Pods-CountryApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		96E8AD7D786DAD0799FCDB2D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FA1D4F781F7935450061D59D /* Alamofire.framework */,
+				FA1D4F761F7935420061D59D /* Kingfisher.framework */,
+				ECF947867A6AE9FAAD3203EB /* Pods_CountryApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FA10D4E31F78E929009214BF = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +117,8 @@
 				FA10D5061F78E929009214BF /* CountryAppTests */,
 				FA10D5111F78E929009214BF /* CountryAppUITests */,
 				FA10D4ED1F78E929009214BF /* Products */,
+				37CBC1DC663197ACE8AD0FBA /* Pods */,
+				96E8AD7D786DAD0799FCDB2D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +135,17 @@
 		FA10D4EE1F78E929009214BF /* CountryApp */ = {
 			isa = PBXGroup;
 			children = (
+				FA2AD1FE1F794CC400AE5511 /* Helpers */,
 				FA10D4EF1F78E929009214BF /* AppDelegate.swift */,
-				FA10D4F11F78E929009214BF /* ViewController.swift */,
 				FA10D4F31F78E929009214BF /* Main.storyboard */,
 				FA10D4F91F78E929009214BF /* Assets.xcassets */,
 				FA10D4FB1F78E929009214BF /* LaunchScreen.storyboard */,
 				FA10D4FE1F78E929009214BF /* Info.plist */,
 				FA10D4F61F78E929009214BF /* CountryApp.xcdatamodeld */,
+				FA10D5201F78E978009214BF /* CountriesUITableTableViewController.swift */,
+				FA10D5221F78E998009214BF /* CountryTableViewCell.swift */,
+				FA10D5241F78E9E8009214BF /* CountryEntity.swift */,
+				FA10D5261F78ED89009214BF /* CountryItemUIViewController.swift */,
 			);
 			path = CountryApp;
 			sourceTree = "<group>";
@@ -128,6 +168,14 @@
 			path = CountryAppUITests;
 			sourceTree = "<group>";
 		};
+		FA2AD1FE1F794CC400AE5511 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				FA2AD1FC1F79492800AE5511 /* JsonHelper.swift */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +183,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FA10D5171F78E929009214BF /* Build configuration list for PBXNativeTarget "CountryApp" */;
 			buildPhases = (
+				985292214FBA89920FC50C0A /* [CP] Check Pods Manifest.lock */,
 				FA10D4E81F78E929009214BF /* Sources */,
 				FA10D4E91F78E929009214BF /* Frameworks */,
 				FA10D4EA1F78E929009214BF /* Resources */,
+				2CFD16027E584F7358AF83BA /* [CP] Embed Pods Frameworks */,
+				560630917F96E93E3B0DCB6A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,13 +308,73 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2CFD16027E584F7358AF83BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CountryApp/Pods-CountryApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountryApp/Pods-CountryApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		560630917F96E93E3B0DCB6A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CountryApp/Pods-CountryApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		985292214FBA89920FC50C0A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CountryApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		FA10D4E81F78E929009214BF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA10D5231F78E998009214BF /* CountryTableViewCell.swift in Sources */,
+				FA10D5251F78E9E8009214BF /* CountryEntity.swift in Sources */,
+				FA10D5271F78ED89009214BF /* CountryItemUIViewController.swift in Sources */,
+				FA2AD1FD1F79492800AE5511 /* JsonHelper.swift in Sources */,
+				FA10D5211F78E978009214BF /* CountriesUITableTableViewController.swift in Sources */,
 				FA10D4F81F78E929009214BF /* CountryApp.xcdatamodeld in Sources */,
-				FA10D4F21F78E929009214BF /* ViewController.swift in Sources */,
 				FA10D4F01F78E929009214BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +527,7 @@
 		};
 		FA10D5181F78E929009214BF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11F5F63D545B09642DDABB33 /* Pods-CountryApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CountryApp/Info.plist;
@@ -428,6 +540,7 @@
 		};
 		FA10D5191F78E929009214BF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BE4E8CC6C1A54E301E03A05F /* Pods-CountryApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CountryApp/Info.plist;
@@ -511,6 +624,7 @@
 				FA10D5191F78E929009214BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA10D51A1F78E929009214BF /* Build configuration list for PBXNativeTarget "CountryAppTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +633,7 @@
 				FA10D51C1F78E929009214BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA10D51D1F78E929009214BF /* Build configuration list for PBXNativeTarget "CountryAppUITests" */ = {
 			isa = XCConfigurationList;
@@ -527,6 +642,7 @@
 				FA10D51F1F78E929009214BF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
